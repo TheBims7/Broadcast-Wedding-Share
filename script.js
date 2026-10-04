@@ -88,7 +88,7 @@ function Generate() {
 
     // 3. Link undangan
     if (urlFinal) {
-        hasil += 'Link undangan bisa diakses lengkap di:\n';
+        hasil += 'Untuk informasi detail Acara, Lokasi, dan Waktu lebih lengkap bisa akses link undangan berikut :\n';
         hasil += urlFinal + '\n';
     }
 
