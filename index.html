@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Share</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container" class="container">
+        <h2>Undangan Share</h2>
+        <div class="box">
+            <label>Nama Penerima</label>
+            <input type="text" id="nama" placeholder="Masukkan nama penerima" required>
+            <label>Pilih Gelar</label>
+            <Select id="gelar">
+                <option value="">-- Pilih Gelar --</option>
+                <option value="Bapak">Bapak</option>
+                <option value="Ibu">Ibu</option>
+                <option value="Saudara">Saudara</option>
+                <option value="Saudari">Saudari</option>
+            </Select>
+            <label>Pilih Lokasi</label>
+            <Select id="lokasi">
+                <option value="">-- Pilih Lokasi --</option>
+                <option value="Tegalrejo">Tegalrejo</option>
+                <option value="Mangun Suparnan">Mangun Suparnan</option>
+            </Select>
+            <label>Masukkan Link Website</label>
+            <input type="text" id="link" placeholder="https://google.com">
+        </div>
+        <label>BroadCast Awal</label>
+        <textarea id="broadcastAwal" placeholder="Ketik atau paste teks awal di sini..."></textarea>
+        <label>BroadCast Akhir</label>
+        <textarea id="broadcastAkhir" placeholder="Ketik atau paste teks akhir di sini..."></textarea>
+
+        <button onclick="Generate()">Generate</button>
+
+        <div id="hasil" class="hasil"></div>
+
+        <div class="btn-group">    
+            <button class="copy" onclick="copyText()">Salin Hasil</button>
+            <button class="clear" onclick="clearText()">Reset</button>
+        </div>
+
+        <div class="toast" id="toast">Berhasil dicopy!</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

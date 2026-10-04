@@ -1,0 +1,150 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 800px;
+}
+h2 {
+    text-align: center;
+    color: #4a5568;
+    margin-top: 0;
+}
+.box {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+label {
+    font-size: 18px;
+    color: #4a5568;
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+input {
+    width: 97%;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 8px;
+    border: 2px solid #cbd5e1;
+}
+select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #cbd5e1;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 15px;
+}
+textarea {
+    width: 100%;
+    height: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 12px;
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+    resize: vertical;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+input:focus, select:focus, textarea:focus {
+    border-color: #3b82f6;
+    outline: none;
+}
+.hasil {
+    width: 96%;
+    min-height: 150px;
+    padding: 12px;
+    margin-top: 20px;
+    font-size: 15px;
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+    white-space: pre-wrap; 
+}
+.btn-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+}
+button {
+    width: 100%;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+button:hover {
+    background-color: #2563eb;
+}
+button.clear {
+    background-color: #ef4444;
+}
+button.copy {
+    background-color: #22c55e;
+}
+button.copy:hover {
+    background-color: #0fa044;
+}
+button.clear:hover {
+    background-color: #dc2626;
+}
+.toast {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #22c55e;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    display: none;
+    font-size: 14px;
+}
+.toast.error {
+    background: #dc3545;   /* merah */
+}
+
+@media(max-width:550px) {
+    input {
+        width: 93%;
+    }
+    textarea {
+        height: 200px;
+    }
+    .hasil {
+        width: 93%;
+    }
+}
+@media(max-width:400px) {
+    body {
+        padding: 0;
+    }
+    .container {
+        background-color: #f4f6f9;
+    }
+    .hasil {
+        width: 92%;
+        background-color: #ffffff;
+    }
+}
